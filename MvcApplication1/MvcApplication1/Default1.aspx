@@ -30,7 +30,6 @@
                 {
                     // c = sr.ReadToEnd();
                 }
-                Response.Write(c);
                 
                 try
                 {

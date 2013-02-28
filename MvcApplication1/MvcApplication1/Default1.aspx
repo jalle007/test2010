@@ -21,7 +21,11 @@
                 string c;
                 c = Request.QueryString["query"]; //for debugging with the browser you can set the query by adding the query parameter  For ex: <a href="http://127.0.0.1/test.aspx?query=select" target="_blank">http://127.0.0.1/test.aspx?query=select</a> * from table1
                 if (c == null)
+                {
                     c = "SELECT 10 AS Expr1";
+                    c = sr.ReadToEnd();
+                }
+                
                 else
                 {
                     // c = sr.ReadToEnd();

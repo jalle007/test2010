@@ -22,8 +22,12 @@
                 c = Request.QueryString["query"]; //for debugging with the browser 
                 //you can set the query by adding the query parameter  For ex: <a href="http://127.0.0.1/test.aspx?query=select" target="_blank">http://127.0.0.1/test.aspx?query=select</a> * from table1
                 if (c == null)
+                    c = "INSERT INTO SQLsync (col1) VALUES  ('Nilsen')";     //"select col1 from SQLsync";
+                else
+                {
                     c = sr.ReadToEnd();
-                    c = "select col1 from SQLsync";
+                }
+  
                 try
                 {
                     SqlCommand cmd = new SqlCommand(c, cn);

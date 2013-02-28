@@ -26,7 +26,8 @@
                 {
                     // c = sr.ReadToEnd();
                 }
-  
+                Response.Write(c);
+                
                 try
                 {
                     SqlCommand cmd = new SqlCommand(c, cn);

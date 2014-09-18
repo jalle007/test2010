@@ -9,9 +9,6 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs ec)
     {
-        // Data Source=(localdb)\v11.0;AttachDbFilename=C:\Users\jibrisimbegovic\Documents\GitHub\SQLsync\App_Data\SQLsync.mdf;Integrated Security=True
-        // @"Data Source=DL-ND-02\SQL2K8R2;Initial Catalog=Umbraco;Persist Security Info=True;User ID=Umbraco;Password=Umbraco"
-        var conStr = @"Server=3be116aa-a6ab-479e-8e38-a1730147d5fe.sqlserver.sequelizer.com;Database=db3be116aaa6ab479e8e38a1730147d5fe;User ID=sjnkozpqwghseqih;Password=zogU5cpfWjLXp4dpKFZS8pnXYcskPPmChAHCQpEQgzKysUw8mcgLVHtjar52Sexg;";
         
         using (SqlConnection cn = new SqlConnection(conStr)) 
         {
